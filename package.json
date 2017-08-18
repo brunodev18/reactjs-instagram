@@ -1,0 +1,26 @@
+{
+  "name": "vuejs-instagram",
+  "version": "1.0.0",
+  "description": "To study the integration between NodeJS and VueJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunodev18/vuejs-instagram.git"
+  },
+  "keywords": [
+    "vuejs",
+    "instagram"
+  ],
+  "author": "Bruno Pontes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunodev18/vuejs-instagram/issues"
+  },
+  "homepage": "https://github.com/brunodev18/vuejs-instagram#readme",
+  "dependencies": {
+    "vue": "^2.4.2"
+  }
+}
