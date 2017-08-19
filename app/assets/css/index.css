@@ -8,7 +8,6 @@
     height: 70px;
     background: #fff;
     position: relative;
-    border-bottom: 1px solid #000;
 }
 
 nav {
@@ -29,7 +28,7 @@ nav {
 
 #navbar ul {
     list-style-type: none;
-    line-height: 70px;
+    padding: 15px 0;
     float: right;
 }
 
@@ -40,7 +39,32 @@ nav {
 
 #navbar ul li a {
     text-decoration: none;
-    padding: 0 20px;
+    padding: 10px 20px;
     color: #000;
+    display: block;
     font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li a:hover {
+    background: #B51D97;
+    color: #fff;
+    border-radius: 3px;
+}
+
+#content {
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+    height: auto;
+}
+
+#content #search-bar {
+    width: 990px;
+    height: 10px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px auto;
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
