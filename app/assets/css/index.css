@@ -11,14 +11,19 @@
     border-bottom: 1px solid #000;
 }
 
-#navbar #navbar-options #navbar-logo {
+nav {
+    margin: 0 auto;
+    width: 990px;
+}
+
+#navbar #navbar-logo {
     position: absolute;
     top: 10px;
 }
 
 #navbar #navbar-options {
     margin: 0 auto;
-    width: 990px;
+    width: auto;
     background: red;
 }
 
