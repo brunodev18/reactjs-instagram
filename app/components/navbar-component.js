@@ -1,5 +1,8 @@
 let html = '<navbar>'
 html += '<section id="navbar-options">'
+html += '<section id="navbar-logo">'
+html += '<img src="app/assets/images/instagram-logo.png" width="150" />'
+html += '</section>'
 html += '<ul>'
 html += '<li><a href="#">Users</a></li>'
 html += '<li><a href="#">Tags</a></li>'
