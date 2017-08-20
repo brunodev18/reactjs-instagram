@@ -20,8 +20,7 @@ app.use('/instagram/oauth', (req, res) => {
 * ENDPOINTS
 */
 
-app.get ('/', [(req, res) => {
-    
+app.get('/', [(req, res) => {
     auth.init()
     .then(result => res.redirect(result))//res.redirect(result))
     .catch(e => console.log(e))
@@ -31,4 +30,4 @@ app.get ('/', [(req, res) => {
 * RUN SERVER
 */
 
-app.listen(port, () => `Running at port ${3000}`)
+app.listen(port, () => `Running at port ${port}`)
