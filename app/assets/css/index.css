@@ -60,11 +60,26 @@ nav {
 
 #content #search-bar {
     width: 990px;
+    
+    margin: 10px auto;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+#content #search-bar input {
     height: 10px;
     border-radius: 20px;
     outline: none;
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 10px auto;
-    font-family: 'Saira Semi Condensed', sans-serif;
+    color: #B51D97;
+    width: 100%;
+    position: relative;
+}
+
+#content #search-bar #searchTerm {
+    position: absolute;
+    top: 6px;
+    right: 0px;
+    background: none;
+    border: none;
 }
