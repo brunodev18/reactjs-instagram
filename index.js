@@ -4,6 +4,7 @@ const path = require('path')
 const port = 3000
 //Controllers
 const authController = require(path.join(__dirname, 'app/controllers/authController.js'))(app)
+const instagramController = require(path.join(__dirname, 'app/controllers/instagramController.js'))(app)
 
 //Middlewares
 app.use(express.static('app'))
@@ -19,6 +20,9 @@ app.get('/instagram/oauth', authController.authenticate, (req, res) => res.redir
 
 //VIEWS
 app.get('/dash', authController.passport, (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
+
+//REQUESTS
+app.post('/instagram/users/self', authController.passport, instagramController.getYourself)
 
 /*
 * RUN SERVER

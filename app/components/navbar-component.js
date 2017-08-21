@@ -1,15 +1,16 @@
-let html = '<section id="navbar-options">'
-html += '<ul>'
-html += '<li><a href="#">Users</a></li>'
-html += '<li><a href="#">Tags</a></li>'
-html += '<li><a href="#">Location</a></li>'
-html += '</ul>'
-html += '<section>'
+const navbarOptions = new Vue({
+    el: '#navbar-options',
+    data: {
+        userImage: ''
+    },
+    mounted: () => {
+        const request = ajax({
+            method: 'POST',
+            url: 'http://localhost:3000/instagram/users/self'
+        })
 
-Vue.component('instavue-navbar-options', {
-    template: html
-})
-
-new Vue({
-    el: '#navbar'
+        request.then((response) => {
+            console.log(response.data)
+        })
+    }
 })

@@ -12,7 +12,14 @@
         <section id="navbar">
             <nav>
                 <instavue-logo></instavue-logo>
-                <instavue-navbar-options></instavue-navbar-options>
+                <section id="navbar-options">
+                    <ul>
+                        <li><a href="#">Users</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="#">Location</a></li>
+                        <li><a href="#">{{userImage}}</a></li>
+                    </ul>
+                <section>
             </nav>
         </section>
         <section id="content">
@@ -20,7 +27,7 @@
         </section>
     </body>
     <script src="vue/dist/vue.min.js"></script>
-    <script src="vue-resource/dist/vue-resource.min.js"></script>
+    <script src="//cdn.rawgit.com/fdaciuk/ajax/v2.3.0/dist/ajax.min.js"></script>
     <script src="components/navbar-component.js"></script>
     <script src="components/navbar-logo-component.js"></script>
     <script src="components/content-searchbar-component.js"></script>
