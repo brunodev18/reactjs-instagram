@@ -3,6 +3,13 @@
     margin: 0;
 }
 
+.user-picture {
+    border-radius: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+}
+
 #navbar {
     width: 100%;
     height: 70px;
@@ -45,17 +52,27 @@ nav {
     font-family: 'Ubuntu', sans-serif;
 }
 
-#navbar ul li a:hover {
+#navbar ul li:last-child a img {
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    padding: 2px;
+}
+
+#navbar ul li:last-child a img:hover {
     background: #B51D97;
-    color: #fff;
-    border-radius: 3px;
+}
+
+#navbar ul li:not(:last-child) a:hover {
+    border-bottom: 2px solid #B51D97;
 }
 
 #content {
     position: relative;
     width: 990px;
     margin: 0 auto;
-    height: auto;
+    /* height: auto; */
+    height: 1000px;
 }
 
 #content #search-bar {
@@ -78,8 +95,14 @@ nav {
 
 #content #search-bar #searchTerm {
     position: absolute;
-    top: 6px;
-    right: 0px;
+    top: -3px;
+    right: -15px;
+    padding: 10px;
     background: none;
     border: none;
+    outline: none;
+}
+
+#content #search-bar #searchTerm:hover {
+    cursor: pointer;
 }

@@ -1,32 +1,39 @@
 {
-  "name": "vuejs-instagram",
+  "name": "reactjs-instagram",
   "version": "1.0.0",
-  "description": "To study the integration between NodeJS and VueJS",
+  "description": "To study the integration between NodeJS and ReactJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brunodev18/vuejs-instagram.git"
+    "url": "git+https://github.com/brunodev18/reactjs-instagram.git"
   },
   "keywords": [
-    "vuejs",
+    "react",
     "instagram"
   ],
   "author": "Bruno Pontes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brunodev18/vuejs-instagram/issues"
+    "url": "https://github.com/brunodev18/reactjs-instagram/issues"
   },
-  "homepage": "https://github.com/brunodev18/vuejs-instagram#readme",
+  "homepage": "https://github.com/brunodev18/reactjs-instagram#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "bluebird": "^3.5.0",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
     "nodemon": "^1.11.0",
-    "request": "^2.81.0",
-    "vue": "^2.4.2",
-    "vue-resource": "^1.3.4"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
