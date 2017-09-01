@@ -8,15 +8,32 @@ module.exports = (app) => {
     //Session middleware
     app.use(session(config.SessionParams))
     //Request url
-    let url = 'https://api.instagram.com/v1'
+    const url = 'https://api.instagram.com/v1'
 
     return {
+
+        /*
+        * USERS
+        */
+
+        //Returns yourself profile data
         getYourself: (req, res) => {
             const access_token = req.session.access_token
 
             request(`${url}/users/self/?access_token=${access_token}`, (err, response, body) => {
                 if (err) throw err
 
+                res.send(body)
+            })
+        },
+
+        //Returns yourself media
+        getYourselfMedia: (req, res) => {
+            const access_token = req.session.access_token
+
+            request(`${url}/users/self/media/recent/?access_token=${access_token}`, (err, response, body) => {
+                if (err) throw err
+                
                 res.send(body)
             })
         }

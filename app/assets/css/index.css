@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 .user-picture {
@@ -8,6 +9,10 @@
     width: 50px;
     margin: 0;
     padding: 0;
+}
+
+.search-term {
+    border-bottom: 2px solid #B51D97
 }
 
 #navbar {
@@ -30,7 +35,6 @@ nav {
 #navbar #navbar-options {
     margin: 0 auto;
     width: auto;
-    background: red;
 }
 
 #navbar ul {
@@ -63,31 +67,33 @@ nav {
     background: #B51D97;
 }
 
-#navbar ul li:not(:last-child) a:hover {
-    border-bottom: 2px solid #B51D97;
-}
-
 #content {
     position: relative;
     width: 990px;
     margin: 0 auto;
-    /* height: auto; */
-    height: 1000px;
+    height: auto;
 }
 
 #content #search-bar {
     width: 990px;
-    
     margin: 10px auto;
-    font-family: 'Saira Semi Condensed', sans-serif;
 }
 
-#content #search-bar input {
+#content #search-bar #search-kind {
+    margin: 10px 0;
+}
+
+#content #search-bar #search-kind label {
+    margin-right: 20px;
+}
+
+#content #search-bar input[type=text] {
     height: 10px;
     border-radius: 20px;
     outline: none;
     border: 1px solid #ccc;
     padding: 10px;
+    margin: 10px 0;
     color: #B51D97;
     width: 100%;
     position: relative;
@@ -95,7 +101,7 @@ nav {
 
 #content #search-bar #searchTerm {
     position: absolute;
-    top: -3px;
+    top: 42px;
     right: -15px;
     padding: 10px;
     background: none;

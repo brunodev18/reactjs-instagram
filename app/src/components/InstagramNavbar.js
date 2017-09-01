@@ -17,17 +17,15 @@ export default class InstagramNavbar extends React.Component {
 
     //Get yourself data
     getUser() {
-        axios.post('/instagram/users/self', {})
-        .then((response) => {
+        axios.post('/instagram/users/self', {}).then((response) => {
             const { data } = response.data
             try {
-                console.log(data)
-                this.setState({userName: data.username})
+                this.setState({userName: `Olá, ${data.username}`})
                 this.refs.profilePicture.insertAdjacentHTML('beforeend', `<img class="user-picture" src="${data.profile_picture}" />`)
             } catch (e) {
                 console.log(e)
             }
-        }).catch((error) => console.log(error))
+        }).catch((error) => console.log(error))  
     }
 
     render() {
@@ -39,7 +37,7 @@ export default class InstagramNavbar extends React.Component {
                     </section>
                     <section id="navbar-options">
                         <ul>
-                            <li><a href="#">Olá, {this.state.userName}</a></li>
+                            <li><a href="#">{this.state.userName}</a></li>
                             <li><a href="#" ref="profilePicture"></a></li>
                         </ul>
                     </section>
