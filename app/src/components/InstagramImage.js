@@ -12,8 +12,20 @@ export default class InstagramImage extends React.Component {
         media.map((element) => {
             const media_url = element.images.thumbnail.url
             const caption = element.caption ? element.caption.text : ''
+            const likes = element.likes.count
+            const comments = element.comments.count
 
-            this.refs.media.insertAdjacentHTML('beforeend', `<img src="${media_url}" alt="${caption}" />`)
+            let html = '<section id="user-media">'
+            html += `<img src="${media_url}" alt="${caption}" />`
+            html += '<section id="media-modal">'
+            html += '<section id="media-assets">'
+            html += `<span>♥️ ${likes}</span>`
+            html += `<span>💬 ${comments}</span>`
+            html += '</section>'
+            html += '</section>'
+            html += '</section>'
+
+            this.refs.media.insertAdjacentHTML('beforeend', html)
         })
     }
 

@@ -112,3 +112,38 @@ nav {
 #content #search-bar #searchTerm:hover {
     cursor: pointer;
 }
+
+#user-media {
+    float: left;
+    position: relative;
+    margin: 0 15px 0 0;
+}
+
+#user-media #media-modal {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    height: 150px;
+    opacity: 0;
+}
+
+#user-media #media-modal #media-assets {
+    position: relative;
+    margin: 65px 25px;
+    width: 100%;
+    z-index: 999;
+    opacity: 1;
+}
+
+#user-media #media-modal #media-assets span {
+    margin: 0 10px;
+}
+
+#user-media #media-modal:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
