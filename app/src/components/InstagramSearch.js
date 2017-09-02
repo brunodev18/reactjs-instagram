@@ -8,9 +8,6 @@ export default class InstagramSearch extends React.Component {
                 <section id="search-kind">
                     <label>Type of search: </label>
                     <label>
-                        <input type="radio" name="search-kind" id="Tags" /> Tags
-                    </label>
-                    <label>
                         <input type="radio" name="search-kind" id="Users" /> Users
                     </label>
                     <label>
